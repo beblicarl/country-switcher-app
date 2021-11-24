@@ -1,0 +1,16 @@
+.header {
+  height: 11%;
+  display: flex;
+  justify-content: space-around;
+  background-color: blue;
+  align-items: center;
+}
+
+.mode {
+  display: flex;
+}
+
+.far {
+  margin-top: 6px;
+  margin-right: 7px;
+}

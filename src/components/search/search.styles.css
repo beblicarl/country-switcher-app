@@ -1,0 +1,12 @@
+.search {
+  height: 10vh;
+}
+input[type="text"] {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.fas {
+  position: absolute;
+  color: black;
+}
