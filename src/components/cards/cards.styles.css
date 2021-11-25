@@ -1,0 +1,36 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin: 2rem;
+}
+
+.card {
+  height: 50vh;
+  width: 40vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 2px 1px #888888;
+}
+
+.card img {
+  height: 28vh;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.card-information {
+  padding: 1rem;
+}
+
+.card-detail {
+  padding-top: 0.5rem;
+}
+
+span {
+  font-weight: 300;
+  font-size: smaller;
+}
