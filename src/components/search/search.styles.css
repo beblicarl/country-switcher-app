@@ -33,7 +33,7 @@ form {
 } */
 .search i {
   position: absolute;
-  padding: 16px 12px;
+  padding: 11px 12px;
 }
 
 .filter {
@@ -73,6 +73,6 @@ form {
     width: 20%;
   }
   .search i {
-    padding: 12px 12px;
+    padding: 14px 12px;
   }
 }
