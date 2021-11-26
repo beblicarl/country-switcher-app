@@ -76,3 +76,16 @@ form {
     padding: 14px 12px;
   }
 }
+
+@media only screen and (min-width: 1000px) {
+  .search i {
+    padding: 12px 12px;
+  }
+
+  form {
+    padding: 1rem 2.9rem;
+  }
+  .header {
+    padding: 1rem 2.9rem;
+  }
+}
