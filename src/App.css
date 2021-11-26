@@ -2,9 +2,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--VeryDarkBlueText);
+}
+h2,
+h3,
+p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  color: var(--VeryDarkBlueText);
+}
+
+:root {
+  --DarkBlue: hsl(209, 23%, 22%);
+  --VeryDarkBlue: hsl(207, 26%, 17%);
+  --VeryDarkBlueText: hsl(200, 15%, 8%);
+  --DarkGray: hsl(0, 0%, 52%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
 }
 
 .App {
   overflow: hidden;
-  background-color: #f9f7f6;
+  background-color: var(--VeryLightGray);
 }

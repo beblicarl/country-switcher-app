@@ -6,24 +6,32 @@
 }
 
 .card {
-  height: 50vh;
+  /* height: 50vh; */
+  height: auto;
   width: 40vh;
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  border-radius: 1rem;
+  border-radius: 5px;
   box-shadow: 2px 2px 2px 1px #888888;
+  margin: 0 auto;
 }
 
 .card img {
   height: 28vh;
   width: 100%;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .card-information {
   padding: 1rem;
+}
+h2 {
+  font-weight: 800;
+}
+h3 {
+  font-weight: 800;
 }
 
 .card-detail {
