@@ -1,13 +1,15 @@
 import "../search/search.styles.css";
 
-const Search = () => {
+const Search = ({ searchField, setSearchField }) => {
   return (
     <div>
-      <form>
+      <form onChange={(e) => setSearchField(e.target.value)}>
         <div className="search">
           <i class="fas fa-search"></i>
           <input type="text" placeholder="Search for your country ..." />
         </div>
+        {/* </form>
+      <form> */}
         <div className="filter">
           <select>
             Filter by Region
