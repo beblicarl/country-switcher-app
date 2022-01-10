@@ -26,3 +26,99 @@ p {
   overflow: hidden;
   background-color: var(--VeryLightGray);
 }
+
+/* form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 2.3rem;
+  gap: 1rem;
+} 
+
+.search {
+  position: relative;
+  width: 92%;
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 1px 1px 1px 1px #888888;
+}
+
+.search input {
+  height: 9vh;
+  width: 90%;
+  border: none;
+  margin-left: 18%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 1px 1px 1px 1px #888888;
+}
+.search input:focus {
+  border: none;
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+.search input::placeholder {
+  padding-left: 3rem;
+} 
+.search i {
+  position: absolute;
+  padding: 23px 12px;
+}
+
+.filter {
+  width: 11rem;
+  background-color: var(--White);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 1px 1px 1px 1px #888888;
+}
+
+.filter select {
+  margin-top: 1rem; 
+  height: 9vh;
+  width: 10rem;
+  border: none;
+  padding: 0.8rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.filter select:focus {
+  border: none;
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.filter select::placeholder {
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 767px) {
+  form {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .search {
+    width: 35%;
+  }
+  .search i {
+    padding: 32px 12px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .search i {
+    padding: 20px 12px;
+  }
+
+  form {
+    padding: 1rem 2.9rem;
+  }
+  .header {
+    padding: 1rem 2.9rem;
+  }
+} 
+*/

@@ -1,13 +1,24 @@
 import "./App.css";
 import Cards from "./components/cards";
 import Header from "./components/header";
-import Search from "./components/search";
+
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Filter from "./components/filter";
 
 function App() {
   const [countries, setCountries] = useState([]);
   const [searchField, setSearchField] = useState("");
+  const [selectField, setSelectField] = useState("");
+
+  const handleChange = (e) => {
+    setSearchField(e.target.value);
+    console.log(searchField);
+  };
+
+  const handleSelect = (e) => {
+    setSelectField(e.target.value);
+  };
 
   useEffect(() => {
     axios
@@ -18,12 +29,18 @@ function App() {
       .catch((err) => {
         console.log(err);
       });
-  }, [countries]);
+  }, []);
+
+  const filteredCountries = countries.filter(
+    (country) =>
+      country.name.common.toLowerCase().includes(searchField.toLowerCase()) &&
+      country.region.toLowerCase().includes(selectField.toLowerCase())
+  );
   return (
     <div className="App">
       <Header />
-      <Search searchField={searchField} setSearchField={setSearchField} />
-      <Cards countries={countries} />
+      <Filter handleChange={handleChange} handleSelect={handleSelect} />
+      <Cards filteredCountries={filteredCountries} />
     </div>
   );
 }
