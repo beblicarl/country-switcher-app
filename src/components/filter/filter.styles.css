@@ -1,39 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Nunito Sans", sans-serif;
-  color: var(--VeryDarkBlueText);
-}
-h2,
-h3,
-p {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 14px;
-  color: var(--VeryDarkBlueText);
-}
-
-:root {
-  --DarkBlue: hsl(209, 23%, 22%);
-  --VeryDarkBlue: hsl(207, 26%, 17%);
-  --VeryDarkBlueText: hsl(200, 15%, 8%);
-  --DarkGray: hsl(0, 0%, 52%);
-  --VeryLightGray: hsl(0, 0%, 98%);
-  --White: hsl(0, 0%, 100%);
-}
-
-.App {
-  overflow: hidden;
-  background-color: var(--VeryLightGray);
-}
-
-/* form {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem 2.3rem;
   gap: 1rem;
-} 
+}
 
 .search {
   position: relative;
@@ -59,9 +30,9 @@ p {
   box-shadow: none;
   border-color: transparent;
 }
-.search input::placeholder {
+/* .search input::placeholder {
   padding-left: 3rem;
-} 
+} */
 .search i {
   position: absolute;
   padding: 23px 12px;
@@ -76,7 +47,7 @@ p {
 }
 
 .filter select {
-  margin-top: 1rem; 
+  /* margin-top: 1rem; */
   height: 9vh;
   width: 10rem;
   border: none;
@@ -96,13 +67,13 @@ p {
 }
 
 @media only screen and (min-width: 767px) {
-  form {
+  .container {
     flex-direction: row;
     gap: 0;
   }
 
   .search {
-    width: 35%;
+    width: 25rem;
   }
   .search i {
     padding: 32px 12px;
@@ -114,11 +85,10 @@ p {
     padding: 20px 12px;
   }
 
-  form {
+  .container {
     padding: 1rem 2.9rem;
   }
   .header {
     padding: 1rem 2.9rem;
   }
-} 
-*/
+}

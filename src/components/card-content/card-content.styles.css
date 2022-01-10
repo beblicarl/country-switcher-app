@@ -1,0 +1,43 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin: 2rem;
+}
+
+.card {
+  height: auto;
+  width: 40vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px #888888;
+  margin: 0 auto;
+}
+
+.card img {
+  height: 28vh;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-information {
+  padding: 1rem;
+}
+h2 {
+  font-weight: 800;
+}
+h3 {
+  font-weight: 800;
+}
+
+.card-detail {
+  padding-top: 0.5rem;
+}
+
+span {
+  font-weight: 300;
+  font-size: smaller;
+}
