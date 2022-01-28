@@ -1,0 +1,61 @@
+button {
+  width: 6rem;
+  height: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+button .fas {
+  padding-right: 0.8rem;
+}
+
+.containers {
+  margin: 2.9rem;
+}
+
+.flag {
+  height: 45vh;
+  width: 35vw;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.content-details {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  gap: 5rem;
+  line-height: 1.7rem;
+}
+
+.country-title {
+  padding-bottom: 1rem;
+}
+.detail-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 500px) {
+  .flag {
+    height: 38vh;
+    width: 77vw;
+  }
+  .content {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .detail {
+    width: 33%;
+  }
+}
