@@ -1,10 +1,10 @@
 import "./App.css";
-import Cards from "./components/cards";
 import Header from "./components/header";
-
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Filter from "./components/filter";
+import DetailsPage from "./components/details-page";
+import HomePage from "./components/HomePage";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   const [countries, setCountries] = useState([]);
@@ -26,9 +26,7 @@ function App() {
       .then((res) => {
         setCountries(res.data);
       })
-      .catch((err) => {
-        console.log(err);
-      });
+      .catch((err) => {});
   }, []);
 
   const filteredCountries = countries.filter(
@@ -39,8 +37,21 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Filter handleChange={handleChange} handleSelect={handleSelect} />
-      <Cards filteredCountries={filteredCountries} />
+
+      <Routes>
+        <Route
+          exact
+          path="/"
+          element={
+            <HomePage
+              handleChange={handleChange}
+              handleSelect={handleSelect}
+              filteredCountries={filteredCountries}
+            />
+          }
+        />
+        <Route path="/country/:cca3" element={<DetailsPage />} />
+      </Routes>
     </div>
   );
 }

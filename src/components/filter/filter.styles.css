@@ -24,6 +24,11 @@
   border-bottom-right-radius: 5px;
   box-shadow: 1px 1px 1px 1px #888888;
 }
+#root > div > div:nth-child(2) > div.container > div > form > div > input[type=text]{
+  box-shadow: 1px 1px 1px 1px #888888;
+}
+
+
 .search input:focus {
   border: none;
   outline-style: none;
@@ -54,6 +59,7 @@
   padding: 0.8rem;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  background-color: #fff;
 }
 .filter select:focus {
   border: none;
